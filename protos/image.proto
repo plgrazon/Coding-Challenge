@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package image;
+
+service Image {
+  rpc receiveImage(ImageRequest) returns (ImageRequest) {}
+}
+
+message ImageRequest {
+  string image = 1;
+}
